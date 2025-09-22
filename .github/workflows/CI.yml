@@ -39,3 +39,12 @@ jobs:
               run: |
                 python SS_BFS.py ../../dataset/ci.txt 1
 
+            - name: Run PySpark single source shortest path
+              working-directory: ./single-source-shortest-path/pyspark
+              run: |
+                python shortestPath.py ../../dataset/ci.txt 1
+
+            - name: Run GraphBLAS single source shortest path
+              working-directory: ./single-source-shortest-path/graphblas
+              run: |
+                python shortestPath.py ../../dataset/ci.txt 1
