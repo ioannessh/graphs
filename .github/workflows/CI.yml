@@ -29,3 +29,13 @@ jobs:
               run: |
                 python MS_BFS.py ../../dataset/ci.txt 1,2
 
+            - name: Run PySpark single source
+              working-directory: ./single-source-parent/pyspark
+              run: |
+                python SS_BFS.py ../../dataset/ci.txt 1
+
+            - name: Run GraphBLAS single source
+              working-directory: ./single-source-parent/graphblas
+              run: |
+                python SS_BFS.py ../../dataset/ci.txt 1
+
