@@ -18,3 +18,14 @@ jobs:
             - name: Install dependencies
               run: |
                   pip install -r requirements.txt
+
+            - name: Run PySpark multiple source
+              working-directory: ./multiple-source-parent/pyspark
+              run: |
+                  python MS_BFS.py ../../dataset/ci.txt 1,2
+
+            - name: Run GraphBLAS multiple source
+              working-directory: ./multiple-source-parent/graphblas
+              run: |
+                python MS_BFS.py ../../dataset/ci.txt 1,2
+
