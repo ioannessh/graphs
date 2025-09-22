@@ -86,9 +86,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-# $env:PATH = "C:\Users\iashurenkov\Documents\Java\jdk-17.0.12\bin;" + $env:PATH
-# $env:PATH = "C:\hadoop;" + $env:PATH
-# $env:HADOOP_HOME = "C:\hadoop"
-# $env:JAVA_HOME = "C:\Users\iashurenkov\Documents\Java\jdk-17.0.12"
-# $env:PATH = "C:\Users\iashurenkov\AppData\Local\Programs\Python\Python312\python3.exe;" + $env:PATH
