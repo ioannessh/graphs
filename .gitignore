@@ -3,3 +3,5 @@
 project/project
 project/target
 target
+__pycache__
+*/__pycache__
